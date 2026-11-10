@@ -1,0 +1,8 @@
+.reveal { visibility: hidden; }
+
+/* SplitText masks add a little vertical room so descenders aren't clipped */
+.reveal [class*='-mask'] { padding-bottom: 0.08em; margin-bottom: -0.08em; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { visibility: visible; }
+}

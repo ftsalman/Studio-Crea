@@ -1,0 +1,109 @@
+.menu {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.menu.is-open { pointer-events: auto; }
+
+.menu__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgb(18 8 6 / 0.35);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+}
+
+.menu__panel {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: min(30rem, calc(100vw - 1.5rem));
+  padding: 5.25rem 1.75rem 1.75rem;
+  border-radius: 1.5rem;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 30px 80px rgb(0 0 0 / 0.25);
+}
+
+.menu__links { list-style: none; }
+
+.menu__link {
+  display: block;
+  overflow: hidden;
+  padding: 0.3rem 0;
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(18 8 6 / 0.08);
+}
+
+.menu__link-inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.menu__link em {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-style: normal;
+  letter-spacing: 0.06em;
+  opacity: 0.45;
+  align-self: flex-start;
+  margin-top: 0.7rem;
+}
+
+.menu__arrow {
+  margin-left: auto;
+  font-size: 1.6rem;
+  color: var(--red);
+  opacity: 0;
+  transform: translateX(-1rem);
+  transition: opacity 0.4s, transform 0.6s var(--ease-out);
+}
+
+.menu__link:hover .menu__arrow,
+.menu__link.is-active .menu__arrow { opacity: 1; transform: none; }
+
+.menu__link.is-active { color: var(--red); }
+
+.menu__foot {
+  display: grid;
+  gap: 1.2rem;
+  margin-top: 2rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.menu__langs { display: flex; gap: 0.4rem; }
+
+.menu__langs button {
+  padding: 0.45rem 0.9rem;
+  border: 1px solid rgb(18 8 6 / 0.15);
+  border-radius: 999px;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.menu__langs button.is-active,
+.menu__langs button:hover { background: var(--ink); border-color: var(--ink); color: #fff; }
+
+.menu__socials { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; }
+
+.menu__socials a,
+.menu__mail { color: inherit; text-decoration: none; opacity: 0.7; transition: opacity 0.3s, color 0.3s; }
+
+.menu__socials a:hover,
+.menu__mail:hover { opacity: 1; color: var(--red); }

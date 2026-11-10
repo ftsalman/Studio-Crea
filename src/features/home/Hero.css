@@ -1,0 +1,92 @@
+.hero {
+  position: relative;
+  height: 100svh;
+  min-height: 36rem;
+  color: #fff;
+  overflow: hidden;
+  background: var(--paper);
+}
+
+.hero__frame {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  clip-path: inset(0% 0% 0% 0% round 0rem);
+  transform-origin: 50% 0%;
+  will-change: transform, clip-path;
+}
+
+.hero__shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgb(18 8 6 / 0.25) 0%, transparent 30%, transparent 55%, rgb(18 8 6 / 0.45) 100%);
+  pointer-events: none;
+}
+
+.hero__content {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding-bottom: clamp(1.5rem, 4vw, 3rem);
+}
+
+.hero__title {
+  max-width: 16ch;
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 6.8vw, 7.5rem);
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+.hero__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: clamp(1.5rem, 4vw, 3rem);
+  padding-top: 1.25rem;
+  border-top: 1px solid rgb(255 255 255 / 0.3);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero__scroll {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  cursor: pointer;
+}
+
+.hero__scroll-icon {
+  display: grid;
+  place-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  border: 1px solid rgb(255 255 255 / 0.5);
+  overflow: hidden;
+}
+
+.hero__scroll-icon svg { animation: hero-bounce 2s var(--ease-out) infinite; }
+
+.hero__scroll:hover .hero__scroll-icon { background: #fff; color: var(--red); }
+
+@keyframes hero-bounce {
+  0% { transform: translateY(-140%); }
+  40%, 60% { transform: translateY(0); }
+  100% { transform: translateY(140%); }
+}
+
+@media (max-width: 640px) {
+  .hero__label { display: none; }
+  .hero__meta { justify-content: flex-end; }
+}

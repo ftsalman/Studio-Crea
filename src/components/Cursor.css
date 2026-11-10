@@ -1,0 +1,52 @@
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.cursor.is-visible { opacity: 1; }
+
+.cursor__dot {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 999px;
+  background: var(--red);
+  transform: translate(-50%, -50%);
+  transition: width 0.5s var(--ease-out), height 0.5s var(--ease-out), background 0.3s, transform 0.3s;
+  mix-blend-mode: normal;
+}
+
+.cursor.is-hover .cursor__dot {
+  width: 2.75rem;
+  height: 2.75rem;
+  background: transparent;
+  box-shadow: inset 0 0 0 1.5px var(--red);
+}
+
+.cursor.is-label .cursor__dot {
+  width: 6rem;
+  height: 6rem;
+  background: var(--red);
+}
+
+.cursor.is-down .cursor__dot { transform: translate(-50%, -50%) scale(0.8); }
+
+.cursor__label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity 0.3s, transform 0.5s var(--ease-out);
+}
+
+.cursor.is-label .cursor__label { opacity: 1; transform: none; }

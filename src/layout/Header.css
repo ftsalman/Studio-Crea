@@ -1,0 +1,87 @@
+.header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem var(--gutter);
+  color: var(--ink);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-120%);
+  transition:
+    transform 0.9s var(--ease-out),
+    color 0.4s,
+    opacity 0.6s;
+}
+
+.header.is-ready { opacity: 1; transform: none; }
+.header.is-ready.is-hidden { transform: translateY(-130%); }
+.header.is-dark { color: #fff; }
+
+.header > * { pointer-events: auto; }
+
+.header__logo {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.45rem;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.menu-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  height: 2.6rem;
+  padding: 0 0.6rem 0 1.25rem;
+  border: 0;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 1px 0 rgb(0 0 0 / 0.04);
+}
+
+.menu-toggle__icon {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: var(--paper-2);
+  transition: background 0.4s;
+}
+
+.menu-toggle__icon i {
+  position: absolute;
+  width: 0.7rem;
+  height: 1.5px;
+  border-radius: 2px;
+  background: currentColor;
+  transition: transform 0.6s var(--ease-out);
+}
+
+.menu-toggle__icon i:first-child { transform: translateY(-2.5px); }
+.menu-toggle__icon i:last-child { transform: translateY(2.5px); }
+
+.menu-toggle:hover .menu-toggle__icon { background: var(--red); color: #fff; }
+
+.menu-toggle.is-open .menu-toggle__icon i:first-child { transform: rotate(45deg); }
+.menu-toggle.is-open .menu-toggle__icon i:last-child { transform: rotate(-45deg); }
+
+@media (max-width: 640px) {
+  .header__talk { display: none; }
+  .header__logo { font-size: 1.25rem; }
+}

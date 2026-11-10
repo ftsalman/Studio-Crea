@@ -1,0 +1,93 @@
+{
+  "nav": { "home": "Home", "about": "About us", "projects": "Projects", "contact": "Contact", "menu": "Menu", "close": "Close", "letsTalk": "Let's talk" },
+  "preloader": { "loading": "Crafting the experience" },
+  "hero": {
+    "title": "We craft digital experiences that make brands impossible to ignore",
+    "scroll": "Scroll to explore",
+    "label": "Creative studio — Est. 2021"
+  },
+  "intro": {
+    "eyebrow": "Beyond the brief",
+    "title": "Ideas that burn bright, built to last",
+    "body": "StudioCrea is a creative studio that fuses brand thinking, design and technology. We turn bold ideas into identities, websites and motion that people feel — and remember.",
+    "cta": "About us",
+    "play": "Play",
+    "reel": "Reel"
+  },
+  "work": {
+    "eyebrow": "Selected work",
+    "title": "Featured Work",
+    "body": "A selection of projects where strategy met craft — and the results spoke for themselves.",
+    "all": "See all projects",
+    "view": "View"
+  },
+  "services": {
+    "eyebrow": "What we do",
+    "statement": "We shape brands from the first spark to the final pixel — strategy, identity, digital and motion under one roof, so every touchpoint feels like the same fire.",
+    "brand": "Brand",
+    "digital": "Digital",
+    "motion": "Motion",
+    "growth": "Growth"
+  },
+  "marquee": "Let's create something unforgettable",
+  "footer": {
+    "eyebrow": "Have a project in mind?",
+    "title": "Let's make it",
+    "titleAccent": "unforgettable",
+    "newsletter": "Subscribe to our newsletter",
+    "emailPlaceholder": "Your email",
+    "subscribe": "Subscribe",
+    "subscribed": "Thanks! You're on the list.",
+    "address": "Address",
+    "contact": "Contact",
+    "social": "Social",
+    "backToTop": "Back to top",
+    "rights": "All rights reserved."
+  },
+  "about": {
+    "eyebrow": "About StudioCrea",
+    "title": "A studio built on curiosity, craft and a little bit of fire",
+    "body1": "We started StudioCrea with a simple belief: the brands people love are the ones that make them feel something. Since then we've partnered with founders, marketers and global teams to build work that is as strategic as it is beautiful.",
+    "body2": "We're a compact team of strategists, designers, developers and motion artists. No layers, no hand-offs into the void — just the people doing the work, working closely with you.",
+    "capabilities": "Capabilities",
+    "clients": "Trusted by ambitious brands",
+    "valuesTitle": "How we work",
+    "values": [
+      { "title": "Spark", "body": "We dig into your business, audience and market until the idea is undeniable." },
+      { "title": "Shape", "body": "We design and prototype fast, testing in motion and in context — not just in slides." },
+      { "title": "Ship", "body": "We build with performance and accessibility in mind, then launch and keep improving." }
+    ]
+  },
+  "stats": { "projects": "Projects delivered", "clients": "Happy clients", "awards": "Awards & mentions", "years": "Years of craft" },
+  "projects": {
+    "eyebrow": "Portfolio",
+    "title": "Work we're proud of",
+    "list": "List",
+    "grid": "Grid",
+    "client": "Client",
+    "year": "Year",
+    "services": "Services",
+    "next": "Next project",
+    "back": "All projects",
+    "challenge": "The challenge",
+    "challengeBody": "The brand needed to stand out in a crowded market and connect with a younger, digital-first audience without losing the trust it had built over the years.",
+    "approach": "Our approach",
+    "approachBody": "We built a flexible visual system around a single, ownable idea, then brought it to life across digital, motion and physical touchpoints with one consistent voice."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's start something bold",
+    "body": "Tell us about your project and we'll get back to you within one business day.",
+    "name": "Your name",
+    "email": "Email",
+    "company": "Company",
+    "message": "Tell us about your project",
+    "interest": "I'm interested in",
+    "budget": "Budget",
+    "send": "Send message",
+    "sending": "Sending…",
+    "sent": "Message sent — we'll be in touch soon!",
+    "error": "Something went wrong. Please email us directly."
+  },
+  "notFound": { "title": "Lost in the heat", "body": "The page you're looking for doesn't exist.", "cta": "Back home" }
+}

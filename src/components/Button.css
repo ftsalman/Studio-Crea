@@ -1,0 +1,96 @@
+.btn {
+  --btn-bg: var(--ink);
+  --btn-fg: var(--paper);
+  --btn-fill: var(--red);
+  --btn-fill-fg: #fff;
+  --btn-h: 3.25rem;
+
+  position: relative;
+  display: inline-flex;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 0;
+  background: none;
+  padding: 0;
+  color: var(--btn-fg);
+  will-change: transform;
+}
+
+.btn--sm { --btn-h: 2.6rem; font-size: 0.72rem; }
+.btn--lg { --btn-h: 4rem; font-size: 0.9rem; }
+
+.btn--light { --btn-bg: #fff; --btn-fg: var(--ink); }
+.btn--red { --btn-bg: var(--red); --btn-fg: #fff; --btn-fill: var(--ink); }
+.btn--outline { --btn-bg: transparent; --btn-fg: currentColor; }
+.btn--outline .btn__inner { box-shadow: inset 0 0 0 1px currentColor; }
+
+.btn__inner {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  height: var(--btn-h);
+  padding: 0 1.5rem 0 1.25rem;
+  border-radius: inherit;
+  background: var(--btn-bg);
+  overflow: hidden;
+  isolation: isolate;
+  transition: color 0.4s var(--ease-out), padding 0.6s var(--ease-out);
+}
+
+.btn__dot {
+  position: relative;
+  z-index: 1;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--btn-fill);
+  flex: none;
+  transition: transform 0.5s var(--ease-out), background 0.4s;
+}
+
+/* the flood: a circle that grows out of the dot */
+.btn__fill {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--btn-fill);
+  clip-path: circle(0.25rem at 1.475rem 50%);
+  transition: clip-path 0.7s var(--ease-out);
+}
+
+.btn__label { position: relative; z-index: 1; }
+
+.btn__arrow {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  width: 0;
+  overflow: hidden;
+  font-size: 1rem;
+  opacity: 0;
+  transform: translateX(-0.5rem);
+  transition: width 0.6s var(--ease-out), opacity 0.4s, transform 0.6s var(--ease-out);
+}
+
+.btn:hover .btn__inner,
+.btn:focus-visible .btn__inner { color: var(--btn-fill-fg); }
+
+.btn:hover .btn__fill,
+.btn:focus-visible .btn__fill { clip-path: circle(150% at 1.475rem 50%); }
+
+.btn:hover .btn__dot,
+.btn:focus-visible .btn__dot { background: var(--btn-fill-fg); transform: scale(0.8); }
+
+.btn--arrow:hover .btn__arrow,
+.btn--arrow:focus-visible .btn__arrow { width: 1rem; opacity: 1; transform: none; }
+
+.btn:focus-visible { outline: 2px solid var(--ember); outline-offset: 4px; }
+
+.btn:disabled { opacity: 0.5; pointer-events: none; }

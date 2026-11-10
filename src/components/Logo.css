@@ -1,0 +1,32 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: currentColor;
+}
+
+.logo-mark {
+  width: 1.15em;
+  height: auto;
+  fill: currentColor;
+  overflow: visible;
+}
+
+.logo-mark__top,
+.logo-mark__bottom {
+  transition: transform 0.7s var(--ease-out);
+}
+
+.logo:hover .logo-mark__top { transform: translate(-6px, -3px); }
+.logo:hover .logo-mark__bottom { transform: translate(6px, 3px); }
+
+.logo__word {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  transform: translateY(-0.04em);
+}
+
+.logo__word b { font-weight: 700; }

@@ -1,0 +1,23 @@
+.roll { display: inline-block; position: relative; }
+
+.roll__row { display: inline-flex; white-space: nowrap; }
+
+.roll__char {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  height: 1.15em;
+  line-height: 1.15em;
+  overflow: hidden;
+}
+
+.roll__char > span {
+  display: block;
+  transition: transform 0.6s var(--ease-out);
+  transition-delay: calc(var(--i) * 0.018s);
+}
+
+.roll-host:hover .roll__char > span,
+.roll-host:focus-visible .roll__char > span {
+  transform: translateY(-100%);
+}

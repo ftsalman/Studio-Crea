@@ -1,0 +1,28 @@
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: currentColor;
+  opacity: 0.85;
+}
+
+.eyebrow i {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--red);
+  box-shadow: 0 0 0 0 rgb(232 22 10 / 0.6);
+  animation: eyebrow-pulse 2.4s infinite;
+}
+
+.eyebrow em { font-style: normal; opacity: 0.5; }
+
+@keyframes eyebrow-pulse {
+  0% { box-shadow: 0 0 0 0 rgb(232 22 10 / 0.55); }
+  70% { box-shadow: 0 0 0 0.6rem rgb(232 22 10 / 0); }
+  100% { box-shadow: 0 0 0 0 rgb(232 22 10 / 0); }
+}

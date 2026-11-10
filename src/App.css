@@ -1,0 +1,133 @@
+/* ==========================================================================
+   StudioCrea — global tokens & base styles
+   Palette taken from the brand artwork: fiery red, ember orange, amber glow,
+   deep crimson shadows, warm ink and warm paper.
+   ========================================================================== */
+
+:root {
+  /* brand */
+  --red: #e8160a;
+  --red-deep: #8f0a02;
+  --ember: #ff6a13;
+  --amber: #ffb347;
+
+  /* neutrals (warm) */
+  --ink: #140806;
+  --ink-2: #22100b;
+  --ink-soft: rgb(20 8 6 / 0.62);
+  --paper: #f5f0eb;
+  --paper-2: #ebe3dc;
+  --line: rgb(20 8 6 / 0.14);
+
+  /* type */
+  --font-display: 'Outfit', system-ui, sans-serif;
+  --font-body: 'Outfit', system-ui, sans-serif;
+  --font-mono: 'DM Mono', ui-monospace, monospace;
+
+  /* layout */
+  --gutter: clamp(1rem, 3vw, 2.5rem);
+  --max: 1680px;
+
+  /* motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.87, 0, 0.13, 1);
+
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--ink);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+img,
+svg,
+video,
+canvas { display: block; max-width: 100%; }
+
+button { font: inherit; }
+
+::selection { background: var(--red); color: #fff; }
+
+:focus-visible { outline: 2px solid var(--ember); outline-offset: 3px; }
+
+/* hide the native cursor only when the custom one is active */
+.has-cursor,
+.has-cursor * { cursor: none !important; }
+
+/* ---------- layout helpers ---------- */
+.container {
+  width: 100%;
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- shared typography ---------- */
+.page-title {
+  max-width: 18ch;
+  margin-top: 1.5rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 7.5vw, 8rem);
+  font-weight: 500;
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 6vw, 6rem);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.lead {
+  font-size: clamp(1.2rem, 2vw, 1.65rem);
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.muted { color: var(--ink-soft); font-size: 1.05rem; line-height: 1.6; }
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

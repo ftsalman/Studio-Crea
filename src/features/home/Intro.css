@@ -1,0 +1,32 @@
+.intro {
+  padding-top: clamp(6rem, 12vw, 11rem);
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+.intro__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: clamp(2rem, 6vw, 6rem);
+  align-items: end;
+  margin-top: 2rem;
+}
+
+.intro__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5.6vw, 6rem);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.intro__body {
+  max-width: 34rem;
+  margin-bottom: 2rem;
+  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 860px) {
+  .intro__grid { grid-template-columns: 1fr; }
+}

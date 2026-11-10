@@ -1,0 +1,28 @@
+.pt {
+  position: fixed;
+  inset: 0;
+  z-index: 150;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.pt__layer {
+  position: absolute;
+  inset: 0;
+  transform: translateY(100%);
+  will-change: transform;
+}
+
+.pt__layer--ember { background: var(--ember); }
+
+.pt__layer--red {
+  display: grid;
+  place-items: center;
+  background:
+    repeating-linear-gradient(90deg, rgb(0 0 0 / 0.14) 0 2px, rgb(255 255 255 / 0.05) 2px 4px, transparent 4px 22px),
+    radial-gradient(circle at 30% 70%, var(--red-deep), transparent 55%),
+    radial-gradient(circle at 75% 30%, var(--ember), transparent 50%),
+    var(--red);
+}
+
+.pt__mark { width: clamp(4rem, 8vw, 6rem); fill: #fff; }

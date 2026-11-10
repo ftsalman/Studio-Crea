@@ -1,0 +1,93 @@
+{
+  "nav": { "home": "Accueil", "about": "À propos", "projects": "Projets", "contact": "Contact", "menu": "Menu", "close": "Fermer", "letsTalk": "Parlons-en" },
+  "preloader": { "loading": "Préparation de l'expérience" },
+  "hero": {
+    "title": "Nous créons des expériences digitales qui rendent les marques impossibles à ignorer",
+    "scroll": "Défilez pour explorer",
+    "label": "Studio créatif — Depuis 2021"
+  },
+  "intro": {
+    "eyebrow": "Au-delà du brief",
+    "title": "Des idées qui brûlent fort, faites pour durer",
+    "body": "StudioCrea est un studio créatif qui fusionne stratégie de marque, design et technologie. Nous transformons les idées audacieuses en identités, sites web et motion que l'on ressent — et dont on se souvient.",
+    "cta": "À propos",
+    "play": "Voir",
+    "reel": "Reel"
+  },
+  "work": {
+    "eyebrow": "Travaux choisis",
+    "title": "Projets phares",
+    "body": "Une sélection de projets où la stratégie rencontre l'artisanat — et où les résultats parlent d'eux-mêmes.",
+    "all": "Voir tous les projets",
+    "view": "Voir"
+  },
+  "services": {
+    "eyebrow": "Ce que nous faisons",
+    "statement": "Nous façonnons les marques de la première étincelle au dernier pixel — stratégie, identité, digital et motion sous un même toit, pour que chaque point de contact porte la même flamme.",
+    "brand": "Marque",
+    "digital": "Digital",
+    "motion": "Motion",
+    "growth": "Croissance"
+  },
+  "marquee": "Créons quelque chose d'inoubliable",
+  "footer": {
+    "eyebrow": "Un projet en tête ?",
+    "title": "Rendons-le",
+    "titleAccent": "inoubliable",
+    "newsletter": "Abonnez-vous à notre newsletter",
+    "emailPlaceholder": "Votre e-mail",
+    "subscribe": "S'abonner",
+    "subscribed": "Merci ! Vous êtes inscrit.",
+    "address": "Adresse",
+    "contact": "Contact",
+    "social": "Réseaux",
+    "backToTop": "Haut de page",
+    "rights": "Tous droits réservés."
+  },
+  "about": {
+    "eyebrow": "À propos de StudioCrea",
+    "title": "Un studio bâti sur la curiosité, l'exigence et un peu de feu",
+    "body1": "Nous avons fondé StudioCrea sur une conviction simple : les marques que l'on aime sont celles qui nous font ressentir quelque chose. Depuis, nous accompagnons fondateurs, marketeurs et équipes internationales pour créer un travail aussi stratégique que beau.",
+    "body2": "Nous sommes une équipe compacte de stratèges, designers, développeurs et motion designers. Pas de couches, pas de relais perdus — seulement les personnes qui font le travail, à vos côtés.",
+    "capabilities": "Expertises",
+    "clients": "Ils nous font confiance",
+    "valuesTitle": "Notre méthode",
+    "values": [
+      { "title": "Étincelle", "body": "Nous explorons votre activité, votre audience et votre marché jusqu'à ce que l'idée soit évidente." },
+      { "title": "Forme", "body": "Nous concevons et prototypons vite, en mouvement et en contexte — pas seulement en slides." },
+      { "title": "Lancement", "body": "Nous développons avec performance et accessibilité, puis lançons et améliorons en continu." }
+    ]
+  },
+  "stats": { "projects": "Projets livrés", "clients": "Clients satisfaits", "awards": "Prix & mentions", "years": "Années d'expérience" },
+  "projects": {
+    "eyebrow": "Portfolio",
+    "title": "Des projets dont nous sommes fiers",
+    "list": "Liste",
+    "grid": "Grille",
+    "client": "Client",
+    "year": "Année",
+    "services": "Services",
+    "next": "Projet suivant",
+    "back": "Tous les projets",
+    "challenge": "Le défi",
+    "challengeBody": "La marque devait se démarquer sur un marché saturé et séduire un public plus jeune et digital, sans perdre la confiance construite au fil des années.",
+    "approach": "Notre approche",
+    "approachBody": "Nous avons bâti un système visuel flexible autour d'une idée unique et forte, puis l'avons déployé sur le digital, le motion et le physique avec une voix cohérente."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Lançons quelque chose d'audacieux",
+    "body": "Parlez-nous de votre projet, nous revenons vers vous sous un jour ouvré.",
+    "name": "Votre nom",
+    "email": "E-mail",
+    "company": "Entreprise",
+    "message": "Parlez-nous de votre projet",
+    "interest": "Je suis intéressé par",
+    "budget": "Budget",
+    "send": "Envoyer",
+    "sending": "Envoi…",
+    "sent": "Message envoyé — nous revenons vite vers vous !",
+    "error": "Une erreur est survenue. Écrivez-nous directement."
+  },
+  "notFound": { "title": "Perdu dans la chaleur", "body": "La page que vous cherchez n'existe pas.", "cta": "Retour à l'accueil" }
+}
